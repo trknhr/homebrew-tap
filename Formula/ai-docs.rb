@@ -5,20 +5,20 @@
 class AiDocs < Formula
   desc "AI-generated memory files manager for Git"
   homepage "https://github.com/trknhr/ai-docs"
-  version "0.0.1"
+  version "0.0.5"
 
   on_macos do
     on_intel do
-      url "https://github.com/trknhr/ai-docs/releases/download/v0.0.1/ai-docs_Darwin_x86_64.tar.gz"
-      sha256 "ea7dfcde150af8b5a24515ef36e91e8e5be361e6b9cf3e99881c318c50f9bb5d"
+      url "https://github.com/trknhr/ai-docs/releases/download/v0.0.5/ai-docs_Darwin_x86_64.tar.gz"
+      sha256 "aac0be0dc7c70ff19fb0c368f6218a82ca2a6ae23848ae2f4ccc8f071ca25dd6"
 
       def install
         bin.install "ai-docs"
       end
     end
     on_arm do
-      url "https://github.com/trknhr/ai-docs/releases/download/v0.0.1/ai-docs_Darwin_arm64.tar.gz"
-      sha256 "9b67dc714a5d60ff222bb95a63e9f9a5727326f0042c8fac0b12f877a6e3281f"
+      url "https://github.com/trknhr/ai-docs/releases/download/v0.0.5/ai-docs_Darwin_arm64.tar.gz"
+      sha256 "085b6fe6e537472f3af5f1c97d2eb892594e8c2e4e581e4104e7f5c454001d3d"
 
       def install
         bin.install "ai-docs"
@@ -29,8 +29,8 @@ class AiDocs < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/trknhr/ai-docs/releases/download/v0.0.1/ai-docs_Linux_x86_64.tar.gz"
-        sha256 "866ee9823352a4ed8c18d1e5bb483b39bcd270cc7e2ed9e97544c35b8eba9fc4"
+        url "https://github.com/trknhr/ai-docs/releases/download/v0.0.5/ai-docs_Linux_x86_64.tar.gz"
+        sha256 "22a8e985d151a08c852c719352932d8887b46267e3b5ae9ab6b45641b6309007"
 
         def install
           bin.install "ai-docs"
@@ -39,8 +39,8 @@ class AiDocs < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/trknhr/ai-docs/releases/download/v0.0.1/ai-docs_Linux_arm64.tar.gz"
-        sha256 "8e3ffacb6e238fa007b3851ab6a787c4e5453dfb4b5e28c60e6efc455f607a56"
+        url "https://github.com/trknhr/ai-docs/releases/download/v0.0.5/ai-docs_Linux_arm64.tar.gz"
+        sha256 "3e432be4f9887028e501d09c328d6baeeb4a76ba0c11bf380338bd8b8b37a51d"
 
         def install
           bin.install "ai-docs"
