@@ -5,21 +5,21 @@
 class Aiu < Formula
   desc "AI Utils - Execute prompts with local AI CLIs"
   homepage "https://github.com/trknhr/ai-utils"
-  version "0.3.3"
+  version "0.3.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/trknhr/ai-utils/releases/download/v0.3.3/aiu_0.3.3_darwin_amd64.tar.gz"
-      sha256 "5e15a5f0afbac571a692519af715f34cdf6dadd7f9ea05147fa59e5084286a26"
+      url "https://github.com/trknhr/ai-utils/releases/download/v0.3.4/aiu_0.3.4_darwin_amd64.tar.gz"
+      sha256 "5865bd51974d6d17fe0ee010ca90221a2f255190707932b34f67c5dab4172b53"
 
       def install
         bin.install "aiu"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/trknhr/ai-utils/releases/download/v0.3.3/aiu_0.3.3_darwin_arm64.tar.gz"
-      sha256 "1dd3ac7473a0b162adaf07bf1ec7de36b932cc42809e4387f283a28457ce54a9"
+      url "https://github.com/trknhr/ai-utils/releases/download/v0.3.4/aiu_0.3.4_darwin_arm64.tar.gz"
+      sha256 "2f5e94e4caa20a7d82eaee08f35aaf31a9fd6721e3a03beda9f3c8dd5898a329"
 
       def install
         bin.install "aiu"
@@ -29,15 +29,15 @@ class Aiu < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trknhr/ai-utils/releases/download/v0.3.3/aiu_0.3.3_linux_amd64.tar.gz"
-      sha256 "262e5d8886be0ee5991e9403218fd74580975341d28c8f5b92c74e09a59c2f4c"
+      url "https://github.com/trknhr/ai-utils/releases/download/v0.3.4/aiu_0.3.4_linux_amd64.tar.gz"
+      sha256 "02bfeb4934cf869933b1fcf11f6b908cf7e0b1714226a8fdbecc50cce472dcf8"
       def install
         bin.install "aiu"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/trknhr/ai-utils/releases/download/v0.3.3/aiu_0.3.3_linux_arm64.tar.gz"
-      sha256 "f34b3e5a253feca19e9cfd4862b0351dd60150edec68ee438cca93617c8c264d"
+      url "https://github.com/trknhr/ai-utils/releases/download/v0.3.4/aiu_0.3.4_linux_arm64.tar.gz"
+      sha256 "08644ef0a6ca97cad493359f0631bcf000125b87543d8b52abad41619076e248"
       def install
         bin.install "aiu"
       end
