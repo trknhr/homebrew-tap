@@ -7,22 +7,22 @@ class Envvault < Formula
   on_macos do
     on_intel do
       url "https://github.com/trknhr/envvault/releases/download/v0.1.0/envvault_v0.1.0_darwin_amd64.tar.gz"
-      sha256 "a7ace04d3cdadd37aa6f4a4a37f1e285606ee93e6dd24c9cf13e1a017b7fb4a6"
+      sha256 "73943e7c25099514edd29c36dfee1d784f84e677bac0e56c29143972b397d1e4"
     end
     on_arm do
       url "https://github.com/trknhr/envvault/releases/download/v0.1.0/envvault_v0.1.0_darwin_arm64.tar.gz"
-      sha256 "a14ff74a80a0b770afd1f82cbd5834afceffb730c15ade891a4820437eff30a3"
+      sha256 "f509bda51b0f5d4ae5f1d586ffc4b1953a3fead0db3d9e8decdc8735b73f1f8c"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/trknhr/envvault/releases/download/v0.1.0/envvault_v0.1.0_linux_amd64.tar.gz"
-      sha256 "c7129a0f8ac9b9bf22dfa9456db7655c1eefaf0a068e7116fbd0aef831e90014"
+      sha256 "f9af03829057b10a1936090081795d35d0433dcfeb679b479736a21346ce338a"
     end
     on_arm do
       url "https://github.com/trknhr/envvault/releases/download/v0.1.0/envvault_v0.1.0_linux_arm64.tar.gz"
-      sha256 "e82445a046dfa4eedb8cd859ac1fc3c1f3c4a9ad4a664f835e3bfe4bc29dfd7f"
+      sha256 "8827f3bde590f0cfcfb62a5f6eaeb3ad4f1f199f7b6169a2d4f626ddb7db400d"
     end
   end
 
