@@ -2,32 +2,40 @@
 class Envvault < Formula
   desc "Run local apps without plaintext .env secrets"
   homepage "https://github.com/trknhr/envvault"
-  version "0.3.1"
+  version "0.4.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/trknhr/envvault/releases/download/v0.3.1/envvault_v0.3.1_darwin_amd64.tar.gz"
-      sha256 "c1c6a25efe182b86d2c7763261560fb57c017dcfa17f763f671811727853dca7"
+      url "https://github.com/trknhr/envvault/releases/download/v0.4.0/envvault_v0.4.0_darwin_amd64.tar.gz"
+      sha256 "719de08e70b5d021978737d7d6748db8afe4a049304214998c0dc14d03e7e2ca"
     end
     on_arm do
-      url "https://github.com/trknhr/envvault/releases/download/v0.3.1/envvault_v0.3.1_darwin_arm64.tar.gz"
-      sha256 "9b9c7a13e8c94797e8dd268cc58c2fac7cfc7116bf855867c22cac57ca9d92b1"
+      url "https://github.com/trknhr/envvault/releases/download/v0.4.0/envvault_v0.4.0_darwin_arm64.tar.gz"
+      sha256 "ca91125e0292f10ae359700de6a4cce5bd6b6d995227deea2783b653f9c5b86b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/trknhr/envvault/releases/download/v0.3.1/envvault_v0.3.1_linux_amd64.tar.gz"
-      sha256 "5f5cb5cbdf08b1298f0e1424e928d05e69058b41c834e8b327fb5e3acb2fab4a"
+      url "https://github.com/trknhr/envvault/releases/download/v0.4.0/envvault_v0.4.0_linux_amd64.tar.gz"
+      sha256 "aa8e92f5ad300175344aa51716f02f01539294b66d1cc0518e76e731c63a8465"
     end
     on_arm do
-      url "https://github.com/trknhr/envvault/releases/download/v0.3.1/envvault_v0.3.1_linux_arm64.tar.gz"
-      sha256 "080a0f23ca201ae54c866e71bf578457d50327d0143cf0e9d934e5ea0a58aeec"
+      url "https://github.com/trknhr/envvault/releases/download/v0.4.0/envvault_v0.4.0_linux_arm64.tar.gz"
+      sha256 "c339c03bf04270daa9360e041dad51486330a45f3a6c98159d7bb09f44440d9c"
     end
   end
 
   def install
     bin.install "envvault"
+  end
+
+  def caveats
+    <<~EOS
+      To enable AI agent integration, run:
+
+        envvault skills install
+    EOS
   end
 
   test do
