@@ -2,27 +2,27 @@
 class Envvault < Formula
   desc "Run local apps without plaintext .env secrets"
   homepage "https://github.com/trknhr/envvault"
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/trknhr/envvault/releases/download/v0.6.0/envvault_v0.6.0_darwin_amd64.tar.gz"
-      sha256 "cb50c7cc5a6ae9582d263c102b191ab59842338b32f3dccbc474fd1c0b0139ac"
+      url "https://github.com/trknhr/envvault/releases/download/v0.7.0/envvault_v0.7.0_darwin_amd64.tar.gz"
+      sha256 "39b19b25a5c891fc081c99247afbd02dcd28746531749988b1a22e7f16ef1b85"
     end
     on_arm do
-      url "https://github.com/trknhr/envvault/releases/download/v0.6.0/envvault_v0.6.0_darwin_arm64.tar.gz"
-      sha256 "ed508f6a579123df42bbf3da187540c0ce822268e63e99aa2fc75b6636f0287d"
+      url "https://github.com/trknhr/envvault/releases/download/v0.7.0/envvault_v0.7.0_darwin_arm64.tar.gz"
+      sha256 "ec30360f30660339812ed59f1808d06ecc73e3590ea33826b3ea8ca009f9c539"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/trknhr/envvault/releases/download/v0.6.0/envvault_v0.6.0_linux_amd64.tar.gz"
-      sha256 "ca1232e61fbf3ba8ff86060372b393053bc5145f98369882a5a2de7a50653abe"
+      url "https://github.com/trknhr/envvault/releases/download/v0.7.0/envvault_v0.7.0_linux_amd64.tar.gz"
+      sha256 "929d2c9067d6c8cfe8659615ded78458e919870fdb96ef4d5b6977b0cdcc9543"
     end
     on_arm do
-      url "https://github.com/trknhr/envvault/releases/download/v0.6.0/envvault_v0.6.0_linux_arm64.tar.gz"
-      sha256 "30d47a726ac41cb974e8320629a4866e14dcfa634d69813263ebe4ed218c8b33"
+      url "https://github.com/trknhr/envvault/releases/download/v0.7.0/envvault_v0.7.0_linux_arm64.tar.gz"
+      sha256 "4ee48549cc4e24dac44a59aa83be7773fcdaace6b5a99f2d61750865b0eeb2bc"
     end
   end
 
